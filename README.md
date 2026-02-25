@@ -1,0 +1,41 @@
+# TabLite
+
+A Tableau-like data visualization authoring app built with Vite, React, TypeScript, Tailwind CSS, and Vega-Lite.
+
+## Features
+
+- **CSV upload** – Load your data from CSV files; columns are auto-classified as categorical, numerical, or date.
+- **Chart types** – Bar, scatter, and line charts.
+- **Encoding channels** – Map fields to X, Y, Color, and (for scatter/line) Size. Field types are shown with icons.
+- **Bar layout** – For bar charts with a color encoding: Group, Stack, or Normalize (100%).
+- **Vega-Lite** – All charts are rendered with Vega-Lite for consistent, declarative specs.
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173).
+
+## Build
+
+```bash
+npm run build
+```
+
+Output is in `dist/`.
+
+## Deploy to GitHub Pages
+
+1. Set the repository name in `vite.config.ts`: update the `base` option when `GITHUB_PAGES=true` (e.g. `'/your-repo-name/'`).
+2. Build for GitHub Pages:
+   ```bash
+   npm run build:gh
+   ```
+3. Deploy the `dist/` folder:
+   - **GitHub Actions**: use `peaceiris/actions-gh-pages` or similar to publish `dist` to the `gh-pages` branch.
+   - **Manual**: push the contents of `dist/` to a `gh-pages` branch or enable GitHub Pages to serve from that branch.
+
+For a repo named `tablite`, the app will be at `https://<username>.github.io/tablite/`.
