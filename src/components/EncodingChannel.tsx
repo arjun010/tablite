@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import { ArrowDown, ArrowUp, MoreVertical, X } from 'lucide-react'
+import { ArrowDown, ArrowUp, MoreVertical } from 'lucide-react'
 import { FieldIcon } from './FieldIcon'
 import type { DataField, Aggregation, EncodingSortDirection } from '../types'
 
